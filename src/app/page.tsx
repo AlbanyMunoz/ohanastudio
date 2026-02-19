@@ -4,6 +4,7 @@ import { Banner } from "../components/Banner";
 import { Footer } from "../components/Footer";
 import { TransitionPage } from "../components/TransitionPage";
 import { Highlights } from "../components/Highlights";
+import { BannerCategory } from "../components/BannerCategory";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <main className="">
         <Banner />
         <Highlights />
+        <BannerCategory />
       </main>
       <Footer />
   </>

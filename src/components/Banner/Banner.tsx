@@ -4,9 +4,10 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 
 export function Banner() {
+  // Animaciones para el banner y sus elementos
   const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
+    hidden: { opacity: 0 }, // El contenedor comienza invisible
+    visible: { // El contenedor se vuelve visible y sus hijos se animan con un retraso
       opacity: 1,
       transition: {
         staggerChildren: 0.2,
@@ -15,12 +16,13 @@ export function Banner() {
     },
   };
 
+  // Animaciones para cada elemento del banner (heading, subheading, botón)
   const itemVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: {
+    hidden: { opacity: 0, y: 20 }, // Cada elemento comienza invisible y ligeramente desplazado hacia abajo
+    visible: { // Cada elemento se vuelve visible y se mueve a su posición original
       opacity: 1,
       y: 0,
-      transition: { duration: 0.6, ease: "easeOut" },
+      transition: { duration: 0.6, ease: [0.42, 0, 0.58, 1] },
     },
   };
 

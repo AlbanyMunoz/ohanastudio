@@ -9,9 +9,9 @@ export function Header() {
   const [openMobileMenu, setOpenMobileMenu] = useState(false);
 
   useEffect(() => {
-    document.body.style.overflow = openMobileMenu ? "hidden" : "";
+    document.body.style.overflow = openMobileMenu ? "hidden" : ""; // Evita el scroll del fondo cuando el menú móvil está abierto
     return () => {
-      document.body.style.overflow = "";
+      document.body.style.overflow = ""; // Asegura que el scroll se restaure si el componente se desmonta mientras el menú está abierto
     };
   }, [openMobileMenu]);
 
@@ -22,7 +22,7 @@ export function Header() {
   ];
 
   return (
-    <header className="bg-[#1A1A1A] fixed w-full z-30">
+    <header className="bg-[#0F0F0F] fixed w-full z-30">
 
         {/* Menu Desktop Static */}
         <div className="container mx-auto py-4 px-5 md:px-0">
@@ -34,11 +34,11 @@ export function Header() {
                 <nav className="hidden md:flex gap-6 my-9">
                     {links.map((l) => (
                         <Link key={l.href} href={l.href}>
-                            <label className="text-white hover:text-gray-300 text-xl font-bold px-4 py-3 rounded hover:bg-gray-700 transition-colors cursor-pointer">{l.label}</label>
+                            <label className="text-white hover:text-gray-300 text-xl px-4 py-3 hover:border-b-2 transition-colors cursor-pointer">{l.label}</label>
                         </Link>
                     ))}
                     <Link href="/bookings">
-                        <label className="text-white rounded-md bg-gray-700 hover:text-gray-300 text-xl font-bold px-4 py-3 rounded hover:bg-gray-700 transition-colors cursor-pointer">Reserva Ahora</label>
+                        <label className="text-white rounded-md bg-gray-700 hover:text-gray-300 text-xl px-4 py-3 rounded hover:bg-gray-700 transition-colors cursor-pointer">Reserva Ahora</label>
                     </Link>
                 </nav>
 
