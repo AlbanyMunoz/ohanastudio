@@ -9,7 +9,7 @@ export function Banner() {
     hidden: { opacity: 0 }, // El contenedor comienza invisible
     visible: { // El contenedor se vuelve visible y sus hijos se animan con un retraso
       opacity: 1,
-      transition: {
+      transition: { // El retraso entre la animación de cada hijo
         staggerChildren: 0.2,
         delayChildren: 0.3,
       },
@@ -48,7 +48,7 @@ export function Banner() {
 
         <motion.div variants={itemVariants}>
           <Link href="/bookings">
-            <button className="bg-white text-black font-bold py-3 px-8 rounded-lg hover:bg-gray-200 transition-colors duration-300 text-base md:text-lg">
+            <button className="bg-white text-black font-bold py-3 px-8 rounded-lg hover:bg-gray-200 transition-colors duration-300 text-base md:text-lg cursor-pointer">
               📷 Reservar Ahora
             </button>
           </Link>
