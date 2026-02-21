@@ -5,6 +5,7 @@ import { Footer } from "../components/Footer";
 import { TransitionPage } from "../components/TransitionPage";
 import { Highlights } from "../components/Highlights";
 import { BannerCategory } from "../components/BannerCategory";
+import { BannerPlans } from "../components/Plans";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <Banner />
         <Highlights />
         <BannerCategory />
+        <BannerPlans />
       </main>
       <Footer />
   </>
