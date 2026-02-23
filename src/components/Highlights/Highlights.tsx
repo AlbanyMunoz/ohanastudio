@@ -14,7 +14,7 @@ export function Highlights(){
       opacity: 1,
       transition: {
         staggerChildren: 0.2,
-        delayChildren: 0.3,
+        delayChildren: 0.2,
       },
     },
   };
@@ -52,8 +52,9 @@ export function Highlights(){
   ];
   
   return(
-    <div ref={ref} className="relative w-full py-20 bg-gray-100">
+    <div ref={ref} className="relative w-full bg-gray-100 py-20">
       <div className="container mx-auto px-4">
+        <h2 className="text-center text-4xl font-bold mb-10">¿Por qué elegir Ohana Studio?</h2>
         <motion.div
           className="mx-auto text-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-4"
           variants={containerVariants}

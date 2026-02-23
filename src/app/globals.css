@@ -32,3 +32,7 @@ nav {
   font-family: var(--font-space-grotesk), Arial, Helvetica, sans-serif;
   font-weight: 400;
 }
+
+.slick-slide > div {
+  margin: 0 10px;
+}

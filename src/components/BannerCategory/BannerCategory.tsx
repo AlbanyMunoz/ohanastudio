@@ -45,7 +45,7 @@ export function BannerCategory(){
         <div className="relative w-full" ref={ref}>
             <h2 className="text-center py-20 font-bold text-gray-800 text-4xl">Explora Nuestras Categorías</h2>
             <motion.div 
-                className="mx-auto flex flex-wrap justify-center gap-8 px-4 pb-20"
+                className="mx-auto flex flex-wrap justify-center gap-8 px-4 pb-5"
                 variants={containerVariants}
                 initial="hidden"
                 animate={isInView ? "visible" : "hidden"}

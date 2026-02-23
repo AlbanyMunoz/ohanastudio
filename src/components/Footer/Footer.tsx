@@ -38,7 +38,7 @@ export function Footer(){
                         <p className="text-gray-400 text-md"><FaLocationArrow className="inline mb-1 text-xl" /> 123 Calle Principal, Ciudad, País</p>
                     </div>
                 </div>
-                <div className="w-full px-5 md:w-[80%] md:mx-auto border-t border-secondary-foreground/20 mt-6">
+                <div className="w-full px-5 md:w-[70%] md:mx-auto border-t border-secondary-foreground/20 mt-6">
                     <div className="flex items-center justify-end py-5">
                         <p className="text-gray-500 text-sm md:text-xl">&copy; 2026 Ohana Studio. Todos los derechos reservados.</p>
                     </div>
