@@ -38,11 +38,11 @@ export function Header() {
                         </Link>
                     ))}
                     <Link href="/bookings">
-                        <label className="text-white rounded-md bg-gray-700 hover:text-gray-300 text-xl px-4 py-3 rounded hover:bg-gray-700 transition-colors cursor-pointer">Reserva Ahora</label>
+                        <label className="text-white rounded-md bg-red-500 hover:bg-red-700 text-xl px-4 py-3 rounded hover:bg-gray-700 transition-colors cursor-pointer">Reserva Ahora</label>
                     </Link>
                 </nav>
 
-                <div className="md:hidden rounded-md bg-gray-800 p-2">
+                <div className="md:hidden rounded-md bg-red-600 p-2">
                     <CiMenuFries
                         className="text-white text-2xl cursor-pointer"
                         onClick={() => setOpenMobileMenu(true)}
@@ -82,7 +82,7 @@ export function Header() {
                             </label>
                         </Link>
                         <AiOutlineClose
-                            className="text-2xl cursor-pointer"
+                            className="text-3xl cursor-pointer border-2 border-red-500 rounded p-1"
                             onClick={() => setOpenMobileMenu(false)}
                             aria-label="Cerrar menú"
                         />
@@ -100,7 +100,7 @@ export function Header() {
                             </Link>
                         ))}
                         <Link href="/bookings" className="mt-2">
-                            <label className="mt-6 text-gray-700 rounded-md bg-gray-800 text-white px-4 py-2 hover:text-gray-900">Reserva Ahora</label>
+                            <label className="mt-6 text-gray-700 rounded-md bg-red-500 text-white px-4 py-2 hover:bg-red-700">Reserva Ahora</label>
                         </Link>
                     </nav>
 
