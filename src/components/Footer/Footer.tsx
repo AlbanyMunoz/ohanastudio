@@ -13,7 +13,7 @@ export function Footer(){
                     <p className="text-center text-white text-xl mt-2 font-light py-3">¡Reserva tu sesión hoy y comienza tu transformación!</p>
                     <Link href="/bookings" className="bg-red-500 text-xl hover:bg-red-700 text-white font-bold py-3 px-10 rounded mt-5">Reserva Ahora</Link>
                 </div>
-                <div className="w-full grid grid-cols-1 px-5 pt-15 md:grid-cols-3 gap-8 md:w-[80%] md:mx-auto">
+                <div className="w-full grid grid-cols-1 px-5 pt-15 md:grid-cols-4 gap-8 md:w-[80%] md:mx-auto">
                     <div className="flex flex-col items-center">
                         <h3 className="text-white text-2xl font-bold mb-2">Contactos:</h3>
                         <p className="text-gray-400 text-md">
@@ -36,6 +36,14 @@ export function Footer(){
                     <div className="flex flex-col items-center">
                         <h3 className="text-white text-2xl font-bold mb-2">Ubicación:</h3>
                         <p className="text-gray-400 text-md"><FaLocationArrow className="inline mb-1 text-xl" /> 123 Calle Principal, Ciudad, País</p>
+                    </div>
+                    <div className="flex flex-col items-start">
+                        <h3 className="text-white text-2xl font-bold mb-2">Suscríbete a nuestro boletín:</h3>
+                        <p className="text-gray-400 text-md mb-4">Recibe las últimas noticias y ofertas directamente en tu correo.</p>
+                        <div className="flex w-full">
+                            <input type="email" placeholder="Tu correo electrónico" className="w-full px-4 py-2 rounded-l bg-gray-800 text-white focus:outline-none" />
+                            <button className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-r">Suscribirse</button>
+                        </div>
                     </div>
                 </div>
                 <div className="w-full px-5 md:w-[70%] md:mx-auto border-t border-secondary-foreground/20 mt-6">
