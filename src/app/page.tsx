@@ -6,6 +6,7 @@ import { TransitionPage } from "../components/TransitionPage";
 import { Highlights } from "../components/Highlights";
 import { BannerCategory } from "../components/BannerCategory";
 import { BannerPlans } from "../components/Plans";
+import { Brands } from "../components/Brands";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <Highlights />
         <BannerCategory />
         <BannerPlans />
+        <Brands />
       </main>
       <Footer />
   </>

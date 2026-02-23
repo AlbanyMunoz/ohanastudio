@@ -4,12 +4,12 @@ import plans from "../../data/plans.js";
 export function BannerPlans(){
 
     return(
-         <div className="relative w-full bg-gray-100 py-15">
+         <div className="relative w-full py-15 mt-10 bg-gray-100">
                 <div className="py-5">
                     <h2 className="text-center mx-5 py-3 font-bold text-gray-800 text-4xl">Nuestros Planes Para ti</h2>
                     <p className="text-center mx-5 pb-10 text-gray-500 text-xl">Elige el plan que mejor se adapte a tus necesidades y comienza a disfrutar de nuestros servicios hoy mismo.</p>
                 </div>
-                <div id="ContainerPlans" className="w-full grid grid-cols-1 mx-50 px-5 md:grid-cols-3 gap-8 mx-auto md:w-[80%]">
+                <div id="ContainerPlans" className="w-full grid grid-cols-1 mx-50 px-5 md:grid-cols-3 gap-8 mx-auto md:w-[60%]">
                     {plans.map((plan) => (
                         <Link key={plan.name} href={`/plans/${plan.name}`} className="bg-white shadow-md hover:shadow-lg transition-shadow duration-300">
                             <div className="w-full h-50 bg-gray-200 mb-4 overflow-hidden">
