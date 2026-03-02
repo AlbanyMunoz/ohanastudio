@@ -1,17 +1,14 @@
 "use client";
-import { Header } from "../components/Header";
-import { Banner } from "../components/Banner";
-import { Footer } from "../components/Footer";
-import { TransitionPage } from "../components/TransitionPage";
-import { Highlights } from "../components/Highlights";
-import { BannerCategory } from "../components/BannerCategory";
-import { BannerPlans } from "../components/Plans";
-import { Brands } from "../components/Brands";
+import { Banner } from "./Banner";
+import { TransitionPage } from "./TransitionPage";
+import { Highlights } from "./Highlights";
+import { BannerCategory } from "./BannerCategory";
+import { BannerPlans } from "./Plans";
+import { Brands } from "./Brands";
 
 export default function Home() {
   return (
     <>
-      <Header />
       <TransitionPage />
       <main className="">
         <Banner />
@@ -20,7 +17,6 @@ export default function Home() {
         <BannerPlans />
         <Brands />
       </main>
-      <Footer />
   </>
   );
 }
